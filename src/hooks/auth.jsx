@@ -44,8 +44,7 @@ function AuthProvider({ children }) {
     <AuthContext.Provider value={{ 
       singIn, 
       user: data.user,
-      signOut,
-      updateProfile }}>
+      signOut }}>
       {children}
     </AuthContext.Provider>
   )
