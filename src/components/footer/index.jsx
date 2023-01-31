@@ -1,5 +1,5 @@
 import { Container } from './styles'
-import  explorer  from '../../assets/explorer'
+import  explorer  from '../../assets/explorer.svg'
 
 
 

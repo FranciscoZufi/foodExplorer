@@ -1,6 +1,6 @@
 import { Container } from './styles'
-import  explorer  from '../../assets/explorer'
-import  menu  from '../../assets/menu'
+import  explorer  from '../../assets/explorer.svg'
+import  menu  from '../../assets/menu.svg'
 
 
 

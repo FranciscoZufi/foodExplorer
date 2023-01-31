@@ -1,7 +1,7 @@
 import { Container } from './styles'
-import  explorer  from '../../assets/explorer'
+import  explorer  from '../../assets/explorer.svg'
 import { Input } from '../Input'
-import  logOut  from '../../assets/logOut'
+import  logOut  from '../../assets/logOut.svg'
 import { Button } from '../Button'
 
 

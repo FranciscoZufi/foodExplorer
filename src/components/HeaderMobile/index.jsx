@@ -1,8 +1,8 @@
 import { Container } from './styles'
-import  explorer  from '../../assets/explorer'
-import  menu  from '../../assets/menu'
+import  explorer  from '../../assets/explorer.svg'
+import  menu  from '../../assets/menu.svg'
 import { Button } from '../Button'
-import pedido from '../../assets/pedido'
+import pedido from '../../assets/pedido.svg'
 
 
 export function HeaderMobile() {
