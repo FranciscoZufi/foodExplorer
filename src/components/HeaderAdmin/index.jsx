@@ -11,7 +11,11 @@ export function Header() {
     <Container>
       <div>
         <img src={explorer} alt="logo food explorer" />
-        <h1> food explorer</h1>
+        <div>
+          <h1> food explorer</h1>
+          <p>admin</p>
+        </div>
+        
       </div>
 
       <div>
