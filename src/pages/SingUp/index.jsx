@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 import  explorer  from '../../assets/explorer.svg'
 
-export function SingIn() {
+export function SingUp() {
   
 return (
   <Container>
@@ -14,17 +14,21 @@ return (
       <h1>food explorer</h1>
     </div>
     <Form>
-      <h2>Faça login</h2>
+      <h2>Crie sua conta</h2>
+      <label>
+        Seu nome
+        <Input placeholder="Exemplo: Maria da Silva" type="text"/>
+      </label>
       <label>
         Email
-        <Input placeholder="Exemplo: exemplo@exemplo.com.br" type="text"/>
+      <Input placeholder="Exemplo: exemplo@exemplo.com.br" type="text"/>
       </label>
       <label>
         Senha
       <Input placeholder="No mínimo 6 caracteres" type="password"/>
       </label>
-      <Button title="Entrar" />
-      <Link to='/register'>Criar uma conta</Link>
+      <Button title="Criar conta" />
+      <Link to='/'>Já tenho uma conta</Link>
     </Form>
   </Container>
 )

@@ -1,15 +1,15 @@
 import {Routes, Route } from 'react-router-dom'
 
 
-import { SingIn } from '../pages/singIn'
-// import { SingUp } from '../pages/singUP'
+import { SingIn } from '../pages/SingIn'
+import { SingUp } from '../pages/SingUp'
 
 
 export function AuthRoutes(){
   return (
     <Routes>
       <Route path="/" element={<SingIn/>}/>
-      {/* <Route path="/register" element={<SingUp/>}/> */}
+      <Route path="/register" element={<SingUp/>}/>
     </Routes>
   )
 }
