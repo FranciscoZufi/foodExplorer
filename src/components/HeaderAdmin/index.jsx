@@ -6,7 +6,7 @@ import { Button } from '../Button'
 
 
 
-export function Header() {
+export function HeaderAdmin() {
   return (
     <Container>
       <div>
