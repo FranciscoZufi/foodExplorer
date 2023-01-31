@@ -17,11 +17,11 @@ return (
       <h2>Faça login</h2>
       <label>
         Email:
-        <Input id='email' placeholder="Exemplo: exemplo@exemplo.com.br" type="text" icon={FiMail}/>
+        <Input placeholder="Exemplo: exemplo@exemplo.com.br" type="text"/>
       </label>
       <label>
         Senha:
-      <Input id='password' placeholder="No mínimo 6 caracteres" type="password" icon={FiLock}/>
+      <Input placeholder="No mínimo 6 caracteres" type="password"/>
       </label>
       <Button title="Entrar" />
       <Link to='/register'>Criar uma conta</Link>

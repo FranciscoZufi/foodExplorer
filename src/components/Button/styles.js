@@ -7,15 +7,12 @@ export const Container = styled.button`
 
   height: 48px;
   border: 0;
-  padding: 12px, 32px, 12px, 32px;
+  padding: 12px, 32px;
   margin-top: 16px;
   border-radius: 5px;
   font-weight: 500;
 
   > placeholder {
     font-size: 16px;
-  }
-  &:disabled {
-    opacity: 0.5;
   }
 `

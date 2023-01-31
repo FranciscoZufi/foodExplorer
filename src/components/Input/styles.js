@@ -1,31 +1,27 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 100%;
+  width: 348px;
   display: flex;
   align-items: center;
 
-  background-color: ${({ theme }) => theme.COLORS.DARK_900};
+  background-color: ${({ theme }) => theme.COLORS.DARK_700};
   color: ${({ theme }) => theme.COLORS.LIGHT_500};
 
   margin-bottom: 28px;
-  margin-bottom: 28px;
   border-radius: 10px;
   > input {
-    height: 56px;
     width: 100%;
 
-    padding: 12px;
+    padding: 12px 14px;
 
-    color: ${({ theme }) => theme.COLORS.LIGHT_500};
-    background: transparent;
-    border: 0;
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+    background-color: ${({ theme }) => theme.COLORS.DARK_700};
+    border: 1px solid #ffffff;
+    border-radius: 5px;
 
     &:placeholder {
       color: ${({ theme }) => theme.COLORS.LIGHT_500};
     }
-  }
-  > svg {
-    margin-left: 16px;
   }
 `
