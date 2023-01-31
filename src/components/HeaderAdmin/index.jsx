@@ -3,7 +3,7 @@ import  explorer  from '../../assets/explorer'
 import { Input } from '../Input'
 import  logOut  from '../../assets/logOut'
 import { Button } from '../Button'
-import pedido from '../../assets/pedido.svg'
+
 
 
 export function Header() {
@@ -22,7 +22,7 @@ export function Header() {
         <Input />
       </div>
       <div>
-        <Button icon={pedido} title="Pedidos(0)"/>
+        <Button title="Novo prato"/>
       </div>
       <div>
         <img src={logOut} alt="voltar ao SingIn" />
