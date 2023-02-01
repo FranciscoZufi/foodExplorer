@@ -1,12 +1,14 @@
 import { Container } from './styles'
-import { Button } from '../Button'
+import up from '../../assets/up.svg'
+import down from '../../assets/down.svg'
+
 
 export function Contador() {
   return (
     <Container>
-      <Button title='-'/>
+      <button><img src={down} alt="" /></button>
       <span> 01 </span>
-      <Button title='+'/>
+      <button><img src={up} alt="" /></button>
     </Container>
   )
 }
