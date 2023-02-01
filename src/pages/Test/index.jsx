@@ -3,7 +3,7 @@ import { Container } from './styles'
 // import { Button } from '../../components/Button'
 // import { Footer } from '../../components/footer'
 // import { FooterMobile } from '../../components/footerMobile'
-import { Header } from '../../components/Header'
+// import { Header } from '../../components/Header'
 // import { HeaderAdmin } from '../../components/HeaderAdmin'
 // import { HeaderMobileAdmin } from '../../components/HeaderAdminMobile'
 // import { HeaderMobile } from '../../components/HeaderMobile'
@@ -17,7 +17,7 @@ return (
     {/* <Card /> */}
     {/* <Footer />  */}
     {/* <FooterMobile /> */}
-    <Header />
+    {/* <Header /> */}
     {/* <HeaderAdmin /> */}
     {/* <HeaderMobileAdmin /> */}
     {/* <HeaderMobile />  */}

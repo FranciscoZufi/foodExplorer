@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-  height: 100%;
+export const Container = styled.footer`
+  height: 77px;
   width: 100vw;
 
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 
   justify-content: space-between;
   padding: 24px 123px;

@@ -18,15 +18,14 @@ export function HeaderAdmin() {
         
       </div>
 
-      <div>
-        <Input />
-      </div>
-      <div>
+      
+        <Input type="text" placeholder=' Busque por pratos ou ingredientes'/>
+      
+      
         <Button title="Novo prato"/>
-      </div>
-      <div>
+     
         <img src={logOut} alt="voltar ao SingIn" />
-      </div>
+     
     </Container>
   )
 }
