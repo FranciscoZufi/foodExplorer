@@ -16,8 +16,8 @@ return (
     <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
     <img src={pngegg} alt="" />
    </Section>
-   <FollowUp>
-    <h2>Refeições</h2>
+   <FollowUp title='Refeições'>
+    
     <Card/>
     <Card/>
     <Card/>

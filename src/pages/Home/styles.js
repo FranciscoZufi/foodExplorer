@@ -28,7 +28,7 @@ export const Container = styled.div`
       font-size: 16px;
     }
   }
-  > div {
+  > Row {
     display: flex;
     flex-direction: row;
     gap: 27px;

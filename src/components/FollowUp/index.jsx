@@ -1,9 +1,9 @@
 import { Container} from './styles'
 
-export function FollowUp({ children}) {
+export function FollowUp({title, children}) {
   return (
     <Container>
-      <h2></h2>
+      <h2>{title}</h2> 
       {children}
     </Container>
   )
