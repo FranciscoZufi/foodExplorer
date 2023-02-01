@@ -7,12 +7,10 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
 
-  justify-content: space-around;
-
+  justify-content: space-between;
+  padding: 24px 123px;
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
-
   > div {
     display: flex;
-    gap: 36px;
   }
 `

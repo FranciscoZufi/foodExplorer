@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
 
   justify-content: space-between;
-  padding: 24px, 123px;
+  padding: 24px 123px;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
 
@@ -23,8 +23,11 @@ export const Container = styled.div`
       font-size: 24px;
       line-height: 28px;
     }
-    > img {
-      fill: ${({ theme }) => theme.COLORS.LIGHT_700};
+  }
+  > div:last-child {
+    > h2 {
+      font-size: 14px;
+      color: ${({ theme }) => theme.COLORS.LIGHT_200};
     }
   }
 `

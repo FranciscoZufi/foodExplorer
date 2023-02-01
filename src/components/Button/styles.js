@@ -7,6 +7,8 @@ export const Container = styled.button`
   border-radius: 5px;
   font-weight: 500;
   padding: 12px 24px;
+  border: none;
+  gap: 11px;
 
   > placeholder {
     font-size: 16px;

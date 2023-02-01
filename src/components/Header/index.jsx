@@ -6,6 +6,7 @@ import { Button } from '../Button'
 import pedido from '../../assets/pedido.svg'
 
 
+
 export function Header() {
   return (
     <Container>
@@ -14,9 +15,9 @@ export function Header() {
         <h1> food explorer</h1>
       </div>
 
-      <div>
-        <Input />
-      </div>
+      
+        <Input  placeholder=' Busque por pratos ou ingredientes'/>
+     
       <div>
         <Button icon={pedido} title="Pedidos(0)"/>
       </div>

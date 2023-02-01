@@ -2,13 +2,14 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   height: 100%;
-  width: 100vw;
+  width: 428px;
 
   display: flex;
   align-items: center;
 
-  justify-content: space-between;
-  padding: 24px, 123px;
+  justify-content: center;
+  padding: 30px 27px;
+  gap: 8px;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
 
@@ -16,15 +17,20 @@ export const Container = styled.div`
     display: flex;
     gap: 10px;
     color: ${({ theme }) => theme.COLORS.LIGHT_700};
+    align-items: center;
+
     > h1 {
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 700;
-      font-size: 24px;
-      line-height: 28px;
+      font-size: 15px;
+      line-height: 18px;
     }
-    > img {
-      fill: ${({ theme }) => theme.COLORS.LIGHT_700};
+  }
+  > div:last-child {
+    > h2 {
+      font-size: 12px;
+      color: ${({ theme }) => theme.COLORS.LIGHT_200};
     }
   }
 `

@@ -1,16 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  max-height: 462px;
-  max-width: 304px;
-  margin: 200px 50px 50px 400px;
-  border: 1px solid ${({ theme }) => theme.COLORS.DARK_300};
-
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   justify-content: space-around;
-
-  background-color: ${({ theme }) => theme.COLORS.DARK_200};
 `
