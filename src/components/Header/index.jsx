@@ -3,7 +3,10 @@ import  explorer  from '../../assets/explorer.svg'
 import { Input } from '../Input'
 import  logOut  from '../../assets/logOut.svg'
 import { Button } from '../Button'
+import { ButtonText } from '../ButtonText'
 import pedido from '../../assets/pedido.svg'
+
+
 
 
 
@@ -14,16 +17,11 @@ export function Header() {
         <img src={explorer} alt="logo food explorer" />
         <h1> food explorer</h1>
       </div>
-
-      
-        <Input  placeholder=' Busque por pratos ou ingredientes'/>
-     
-      <div>
-        <Button icon={pedido} title="Pedidos(0)"/>
-      </div>
-      <div>
-        <img src={logOut} alt="voltar ao SingIn" />
-      </div>
+      <Input type="text" placeholder=' Busque por pratos ou ingredientes'/>
+      <ButtonText title='Meus favoritos'/>
+      <ButtonText title='Histórico de pedidos'/>
+      <Button icon={pedido} title="Pedidos(0)"/>
+      <img src={logOut} alt="voltar ao SingIn" />  
     </Container>
   )
-}
+  }

@@ -10,7 +10,13 @@ export const Container = styled.div`
   justify-content: space-between;
   padding: 24px 123px;
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
+  > Link {
+    text-decoration: none;
+    color: ${({ theme }) => theme.COLORS.LIGHT_300};
+    background-color: ${({ theme }) => theme.COLORS.DARK_600};
+  }
   > div {
     display: flex;
+    gap: 10px;
   }
 `

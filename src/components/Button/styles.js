@@ -9,8 +9,4 @@ export const Container = styled.button`
   padding: 12px 24px;
   border: none;
   gap: 11px;
-
-  > placeholder {
-    font-size: 16px;
-  }
 `
