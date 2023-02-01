@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  height: 100vh;
-  width: 100vw;
+  max-height: 462px;
+  max-width: 304px;
+  border: 1px solid ${({ theme }) => theme.COLORS.DARK_300};
 
   display: flex;
   flex-direction: column;
@@ -10,5 +11,19 @@ export const Container = styled.div`
 
   justify-content: space-around;
 
-  background-color: ${({ theme }) => theme.COLORS.DARK_300};
+  background-color: ${({ theme }) => theme.COLORS.DARK_200};
+  > img {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  > div:nth-child() {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    > Button {
+      width: 92px;
+      height: 48px;
+    }
+  }
 `
