@@ -1,13 +1,14 @@
 import {Routes, Route } from 'react-router-dom'
 
 
-import { Home } from '../pages/Home'
+
+import { HomeAdmin } from '../pages/HomeAdmin'
 
 
 export function AppRoutes(){
   return (
     <Routes>
-      <Route path="/home" element={<Home/>}/>
+      <Route path="/homeAdmin" element={<HomeAdmin/>}/>
     </Routes>
   )
 }

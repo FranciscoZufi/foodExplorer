@@ -30,10 +30,4 @@ export const Container = styled.div`
       font-size: 14px;
     }
   }
-  > div:last-child {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 18px;
-  }
 `

@@ -1,38 +1,38 @@
 import { Container} from './styles'
-import { Header } from '../../components/Header'
+import { HeaderAdmin } from '../../components/HeaderAdmin'
 import { Footer } from '../../components/footer'
 import { Section }from '../../components/Section'
 import { FollowUp }from '../../components/FollowUp'
-import { Card }from '../../components/Card'
+import { CardAdmin }from '../../components/CardAdmin'
 import pngegg from '../../assets/pngegg.png'
 
 
-export function Home() {
+export function HomeAdmin() {
   
 return (
   <Container>
-   <Header />
+   <HeaderAdmin />
    <Section title='Sabores inigualáveis'>
     <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
     <img src={pngegg} alt="" />
    </Section>
   <FollowUp title='Refeições'>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
+    <CardAdmin/>
+    <CardAdmin/>
+    <CardAdmin/>
+    <CardAdmin/>
   </FollowUp>
   <FollowUp title='Sobremesas'>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
+    <CardAdmin/>
+    <CardAdmin/>
+    <CardAdmin/>
+    <CardAdmin/>
   </FollowUp>
   <FollowUp title='Bebidas'>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
+    <CardAdmin/>
+    <CardAdmin/>
+    <CardAdmin/>
+    <CardAdmin/>
   </FollowUp>
   
    <Footer />
