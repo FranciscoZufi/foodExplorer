@@ -13,6 +13,8 @@ export const Container = styled.div`
 
   > div {
     display: flex;
+    align-items: flex-start;
+
     gap: 10px;
     > div {
       > p {
