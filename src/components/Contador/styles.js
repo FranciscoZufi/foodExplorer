@@ -5,10 +5,11 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-around;
   color: ${({ theme }) => theme.COLORS.LIGHT_300};
-  background-color: ${({ theme }) => theme.COLORS.DARK_300};
+  background: transparent;
   gap: 18px;
   > button {
-    background-color: ${({ theme }) => theme.COLORS.DARK_300};
+    border: none;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: baseline;
