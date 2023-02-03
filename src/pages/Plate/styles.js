@@ -7,34 +7,25 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_500};
 
+  .plates {
+    display: flex;
+    gap: 48px;
+  }
   .description {
     gap: 24px;
   }
   .ingredients {
     display: flex;
+    flex-direction: row;
     gap: 12px;
   }
-
-  .contador {
+  .pedido {
     display: flex;
-    gap: 36px;
-  }
-  .plate {
-    display: grid;
-    > button {
-      background: transparent;
-      border: none;
-      color: ${({ theme }) => theme.COLORS.LIGHT_100};
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      justify-items: baseline;
-      gap: 11px;
-      font-size: 24px;
-    }
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 `
