@@ -2,13 +2,13 @@ import {Routes, Route } from 'react-router-dom'
 
 
 
-import { Plate } from '../pages/plate'
+import { MyFavorites } from '../pages/MyFavorites'
 
 
 export function AppRoutes(){
   return (
     <Routes>
-      <Route path="/plate" element={<Plate/>}/>
+      <Route path="/myFavorites" element={<MyFavorites/>}/>
     </Routes>
   )
 }
