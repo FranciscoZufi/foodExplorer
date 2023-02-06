@@ -17,7 +17,7 @@ export function Header() {
         <img src={explorer} alt="logo food explorer" />
         <h1> food explorer</h1>
       </div>
-      <Input type="text" placeholder=' Busque por pratos ou ingredientes'/>
+      <Input type="search" placeholder=' Busque por pratos ou ingredientes'/>
       <ButtonText title='Meus favoritos'/>
       <ButtonText title='Histórico de pedidos'/>
       <Button Icon={pedido} title="Pedidos(0)"/>
