@@ -13,14 +13,14 @@ import { Button } from '../../components/Button'
 
 
 
-export function EditPlate() {
+export function CreatePlate() {
   
 return (
   <Container>
    <Header />
     <div className='page'>
     <ButtonText Img={back} title='Voltar'/>
-    <Section title='Editar prato'>
+    <Section title='Adicionar prato'>
       <label>Imagem do prato</label>
       <Input type='file'/>
       <label>Nome</label>
@@ -38,7 +38,7 @@ return (
       <Input type='text' placeholder='R$ 00,00'/>
       <label>Descrição</label>
       <Textarea placeholder='A Salada César é uma opção refrescante para o verão.'></Textarea>
-      <ButtonText title='Excluir prato'/>
+      
       <Button title='Salvar Alterações'/>
     </Section>
     </div>
