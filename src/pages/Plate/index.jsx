@@ -6,8 +6,8 @@ import { ButtonText } from '../../components/ButtonText'
 import { Ingredients } from '../../components/Ingredients'
 import { Contador } from '../../components/Contador'
 import { Button } from '../../components/Button'
-import image1 from '../../assets/image1.png'
 import back from '../../assets/back.svg'
+import image1 from '../../assets/image1.png'
 
 export function Plate() {
   
