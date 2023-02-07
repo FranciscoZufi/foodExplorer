@@ -46,9 +46,11 @@ return (
         <Textarea placeholder='A Salada César é uma opção refrescante para o verão.'></Textarea>
       </label>
      </div>
-    
-      <ButtonText title='Excluir prato'/>
-      <Button title='Salvar Alterações'/>
+      <div className='buttons'>
+        <ButtonText title='Excluir prato'/>
+        <Button title='Salvar Alterações'/>
+      </div>
+      
     </Section>
     </div>
    <Footer />

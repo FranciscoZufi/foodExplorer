@@ -23,7 +23,6 @@ export const Container = styled.div`
     margin-top: 32px;
     > label {
       color: ${({ theme }) => theme.COLORS.LIGHT_400};
-      gap: 16px;
     }
   }
   .price {
@@ -34,7 +33,11 @@ export const Container = styled.div`
     margin-bottom: 32px;
     > label {
       color: ${({ theme }) => theme.COLORS.LIGHT_400};
-      gap: 16px;
     }
+  }
+  .buttons {
+    display: flex;
+    justify-content: end;
+    gap: 32px;
   }
 `
