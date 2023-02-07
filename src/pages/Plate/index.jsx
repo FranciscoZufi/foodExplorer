@@ -14,19 +14,19 @@ export function Plate() {
 return (
   <Container>
    <Header />
-   <ButtonText Img={back} title='Voltar'/>
+   <div className='back'><ButtonText icon={back} title='Voltar'/></div>
    <div className='plates'>
     <img src={image1} alt="Prato" />
     <div className='description'>
       <h2>Salada Ravanello</h2>
       <p>Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.</p>
       <div className='ingredients'>
-        <Ingredients title='alface'/>
-        <Ingredients title='cebola'/>
-        <Ingredients title='pão naan'/>
-        <Ingredients title='pepino'/>
-        <Ingredients title='rabanete'/>
-        <Ingredients title='tomate'/>
+        <div className='ingredient'><p>alface</p></div>
+        <div className='ingredient'><p>cebola</p></div>
+        <div className='ingredient'><p>pão naan</p></div>
+        <div className='ingredient'><p>pepino</p></div>
+        <div className='ingredient'><p>rabanete</p></div>
+        <div className='ingredient'><p>tomate</p></div>
       </div>
       <div className='pedido'>
         <Contador />

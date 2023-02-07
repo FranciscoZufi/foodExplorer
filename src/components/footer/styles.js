@@ -6,8 +6,8 @@ export const Container = styled.footer`
 
   display: flex;
   align-items: center;
-  margin-bottom: 0;
-
+  bottom: 0;
+  position: fixed;
   justify-content: space-between;
   padding: 24px 123px;
 

@@ -1,13 +1,14 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  height: 100%;
+  height: 77px;
   width: 100vw;
 
   display: flex;
   align-items: center;
   padding: 24px 123px;
   justify-content: space-around;
+  margin-top: 0px;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
 

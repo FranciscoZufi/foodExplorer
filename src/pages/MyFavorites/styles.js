@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  height: 100%;
+  height: 100vh;
   width: 100vw;
 
   display: flex;
@@ -14,9 +14,12 @@ export const Container = styled.div`
   }
   > div {
     margin-top: 32px;
+
     gap: 32px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-areas: 'CardFav CardFav CardFav CardFav';
     align-items: center;
     justify-content: center;
   }
