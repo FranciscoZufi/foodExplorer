@@ -12,10 +12,10 @@ export const Container = styled.div`
   > h1 {
     margin-top: 34px;
   }
-  > label {
-    color: ${({ theme }) => theme.COLORS.LIGHT_400};
-  }
 
+  .page {
+    margin: 40px 124px;
+  }
   .category {
     display: flex;
     flex-direction: row;
@@ -23,6 +23,21 @@ export const Container = styled.div`
     margin-top: 32px;
     > label {
       color: ${({ theme }) => theme.COLORS.LIGHT_400};
+    }
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      min-width: 350px;
+
+      padding: 16px;
+      text-align: center;
+      color: ${({ theme }) => theme.COLORS.LIGHT_100};
+      background-color: ${({ theme }) => theme.COLORS.DARK_900};
+      border: none;
+      border-radius: 5px;
+      text-align: start;
     }
   }
   .price {
@@ -34,10 +49,20 @@ export const Container = styled.div`
     > label {
       color: ${({ theme }) => theme.COLORS.LIGHT_400};
     }
+    .tags {
+      display: flex;
+      gap: 16px;
+      width: 837px;
+      background-color: ${({ theme }) => theme.COLORS.DARK_900};
+      border-radius: 8px;
+      padding: 8px;
+      justify-content: start;
+    }
   }
   .buttons {
     display: flex;
     justify-content: end;
     gap: 32px;
+    margin-top: 32px;
   }
 `

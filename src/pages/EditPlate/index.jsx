@@ -1,5 +1,5 @@
 import { Container} from './styles'
-import { Header } from '../../components/Header'
+import { HeaderAdmin } from '../../components/HeaderAdmin'
 import { Footer } from '../../components/footer'
 import { ButtonText } from '../../components/ButtonText'
 import { Section } from '../../components/Section'
@@ -17,34 +17,37 @@ export function EditPlate() {
   
 return (
   <Container>
-   <Header />
+   <HeaderAdmin />
     <div className='page'>
     <ButtonText icon={back} title='Voltar'/>
     <Section title='Editar prato'>
       <div className='category'>
-        <label>Imagem do prato <Input type='file'/></label>
-      <label>Nome <Input type='text' placeholder='Salada Ceasar'/></label>
-      <label>Categoria 
-        <select>
+        <label htmlFor='file'>Imagem do prato</label> 
+        <Input id='file'  type='file'/>
+      <label htmlFor='name'>Nome</label> 
+      <Input id='name' type='text' placeholder='Salada Ceasar'/>
+      <label htmlFor='select'>Categoria</label>
+        <select id='select'>
           <option value='refeicao'>Refeição</option>
           <option value='bebida'>Bebida</option>
           <option value='sopa'>Sopa</option>
+          <img src="../../assets/select.svg" alt="" />
         </select>
-      </label>
       </div>
       <div className='price'> 
-        <label>Ingredientes
+        <label htmlFor='ingredients'>Ingredientes</label>
+        <div className='tags'>
           <Ingredients placeholder='pão'/>
-          <Ingredients placeholder='Novo Ingrediente' isNew/>
-        </label>
-        <label>Preço
-          <Input type='text' placeholder='R$ 00,00'/> 
-        </label>
+          <Ingredients id='ingredients' placeholder='Novo Ingrediente' isNew/>
+        </div>
+        <label htmlFor='price'>Preço</label>
+          <Input id='price' type='text' placeholder='R$ 00,00'/> 
+        
       </div>
      <div className='description'>
-        <label>Descrição
-        <Textarea placeholder='A Salada César é uma opção refrescante para o verão.'></Textarea>
-      </label>
+        <label htmlFor='description'>Descrição</label>
+        <Textarea id='description' placeholder='A Salada César é uma opção refrescante para o verão.'></Textarea>
+      
      </div>
       <div className='buttons'>
         <ButtonText title='Excluir prato'/>

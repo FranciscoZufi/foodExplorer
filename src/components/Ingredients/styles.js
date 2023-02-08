@@ -9,7 +9,7 @@ export const Container = styled.div`
   color: ${({ theme }) => theme.COLORS.LIGHT_500};
   border: ${({ theme, isNew }) =>
     isNew ? `1px dashed ${theme.COLORS.LIGHT_500}` : 'none'};
-  margin-bottom: 8px;
+
   border-radius: 10px;
   padding-right: 16px;
 
