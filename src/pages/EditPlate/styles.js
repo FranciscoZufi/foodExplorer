@@ -24,6 +24,9 @@ export const Container = styled.div`
     > label {
       color: ${({ theme }) => theme.COLORS.LIGHT_400};
     }
+    input[type='file'] {
+    }
+
     select {
       appearance: none;
       -webkit-appearance: none;

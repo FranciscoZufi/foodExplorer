@@ -7,8 +7,8 @@ import { Input } from '../../components/Input'
 import { Textarea } from '../../components/Textarea'
 import back from '../../assets/back.svg'
 import { Ingredients } from '../../components/Ingredients'
-import { Button } from '../../components/Button'
-
+import { ButtonSave } from '../../components/ButtonSave'
+import file from '../../assets/file.svg'
 
 
 
@@ -23,7 +23,7 @@ return (
     <Section title='Editar prato'>
       <div className='category'>
         <label htmlFor='file'>Imagem do prato</label> 
-        <Input id='file'  type='file'/>
+        <Input icon={file} placeholder='Selecione imagem' id='file'  type='file'/>
       <label htmlFor='name'>Nome</label> 
       <Input id='name' type='text' placeholder='Salada Ceasar'/>
       <label htmlFor='select'>Categoria</label>
@@ -31,7 +31,6 @@ return (
           <option value='refeicao'>Refeição</option>
           <option value='bebida'>Bebida</option>
           <option value='sopa'>Sopa</option>
-          <img src="../../assets/select.svg" alt="" />
         </select>
       </div>
       <div className='price'> 
@@ -51,7 +50,7 @@ return (
      </div>
       <div className='buttons'>
         <ButtonText title='Excluir prato'/>
-        <Button title='Salvar Alterações'/>
+        <ButtonSave title='Salvar Alterações'/>
       </div>
       
     </Section>
