@@ -10,6 +10,7 @@ import { OrderHistory } from '../pages/OrderHistory'
 import { Plate } from '../pages/Plate'
 import { PlateAdmin } from '../pages/PlateAdmin'
 import { EditPlate } from '../pages/EditPlate'
+import { NewPlate } from '../pages/NewPlate'
 
 
 export function AppRoutes(){
@@ -23,6 +24,7 @@ export function AppRoutes(){
       <Route path="/plate" element={<Plate/>}/>
       <Route path="/plateAdmin" element={<PlateAdmin/>}/>
       <Route path="/editPlate" element={<EditPlate/>}/>
+      <Route path="/newPlate" element={<NewPlate/>}/>
     </Routes>
   )
 }
