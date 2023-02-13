@@ -12,6 +12,7 @@ export const Container = styled.div`
   .table {
     margin-top: 3.5rem;
     h1 {
+      font-size: 3.2rem;
       margin-bottom: 3.5rem;
     }
     table {
@@ -21,6 +22,7 @@ export const Container = styled.div`
     th,
     td,
     tr {
+      font-size: 1.4rem;
       border: 0.2rem solid ${({ theme }) => theme.COLORS.DARK_1000};
       padding: 2.1rem auto;
       border-collapse: collapse;
