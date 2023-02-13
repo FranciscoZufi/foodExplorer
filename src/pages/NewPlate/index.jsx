@@ -20,18 +20,24 @@ return (
    <HeaderAdmin />
     <div className='page'>
     <ButtonText icon={back} title='Voltar'/>
-    <Section title='Editar prato'>
+    <Section title='Adicionar prato'>
       <div className='category'>
+        <div className='file'>
         <label htmlFor='file'>Imagem do prato</label> 
         <Input icon={file} placeholder='Selecione imagem' id='file'  type='file'/>
-      <label htmlFor='name'>Nome</label> 
-      <Input id='name' type='text' placeholder='Salada Ceasar'/>
-      <label htmlFor='select'>Categoria</label>
-        <select id='select'>
-          <option value='refeicao'>Refeição</option>
-          <option value='bebida'>Bebida</option>
-          <option value='sopa'>Sopa</option>
-        </select>
+        </div>
+        <div className='name'>
+        <label htmlFor='name'>Nome</label> 
+        <Input id='name' type='text' placeholder='Salada Ceasar'/>
+        </div>
+        <div>
+        <label htmlFor='select'>Categoria</label>
+          <select id='select'>
+            <option value='refeicao'>Refeição</option>
+            <option value='bebida'>Bebida</option>
+            <option value='sopa'>Sopa</option>
+          </select>
+         </div>
       </div>
       <div className='price'> 
         <label htmlFor='ingredients'>Ingredientes</label>
