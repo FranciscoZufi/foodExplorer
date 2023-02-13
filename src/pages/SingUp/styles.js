@@ -25,7 +25,7 @@ export const Container = styled.div`
 `
 export const Form = styled.form`
   padding: 6.4rem;
-  width: 47.6rem;
+  max-width: 47.6rem;
   height: 62.1rem;
 
   display: flex;

@@ -24,7 +24,7 @@ export const Container = styled.div`
     width: 80%;
     gap: 4.8rem;
     > img {
-      width: 39rem;
+      max-width: 39rem;
       height: 39rem;
     }
   }

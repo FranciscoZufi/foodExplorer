@@ -55,7 +55,7 @@ export const Container = styled.div`
     .tags {
       display: flex;
       gap: 1.6rem;
-      width: 83.7rem;
+      max-width: 83.7rem;
       background-color: ${({ theme }) => theme.COLORS.DARK_900};
       border-radius: 0.8rem;
       padding: 0.8rem;

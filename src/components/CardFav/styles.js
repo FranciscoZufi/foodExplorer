@@ -9,7 +9,7 @@ export const Container = styled.div`
   background-color: transparent;
   .img {
     > img {
-      width: 10rem;
+      max-width: 10rem;
       height: 10rem;
     }
   }

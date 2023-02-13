@@ -12,7 +12,7 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARK_500};
   > Section {
     margin-top: 19.2rem;
-    width: 112rem;
+    max-width: 112rem;
     height: 28rem;
     align-items: center;
     justify-content: space-evenly;
