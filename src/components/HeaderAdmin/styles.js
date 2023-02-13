@@ -10,7 +10,9 @@ export const Container = styled.div`
   justify-content: space-around;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
-
+  h1 {
+    font-size: 4rem;
+  }
   > div {
     display: flex;
     align-items: flex-start;

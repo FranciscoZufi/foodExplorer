@@ -62,6 +62,7 @@ export const Container = styled.div`
       justify-content: start;
     }
   }
+
   .buttons {
     display: flex;
     justify-content: end;

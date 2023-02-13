@@ -7,7 +7,9 @@ export default createGlobalStyle`
   box-sizing: border-box;
   font-size: 62.5%;
 };
-
+label {
+    font-size: 1.6rem;
+  }
 body {
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
