@@ -14,9 +14,9 @@ export const Container = styled.div`
   > div {
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 0.8rem;
     > p {
-      font-size: 12px;
+      font-size: 1.2rem;
       color: ${({ theme }) => theme.COLORS.CAKE_200};
     }
   }

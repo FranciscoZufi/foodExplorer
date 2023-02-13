@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-  margin: 28px 0;
+  margin: 2.8rem 0;
   > h2 {
     color: ${({ theme }) => theme.COLORS.LIGHT_300};
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 500;
   }
 `

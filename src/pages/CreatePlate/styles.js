@@ -10,11 +10,11 @@ export const Container = styled.div`
 
   background-color: ${({ theme }) => theme.COLORS.DARK_500};
   > h1 {
-    margin-top: 34px;
+    margin-top: 3.4rem;
   }
   > div {
-    margin-top: 32px;
-    gap: 32px;
+    margin-top: 3.2rem;
+    gap: 3.2rem;
     display: flex;
     flex-direction: row;
     align-items: center;

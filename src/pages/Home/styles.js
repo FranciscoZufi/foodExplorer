@@ -11,9 +11,9 @@ export const Container = styled.div`
 
   background-color: ${({ theme }) => theme.COLORS.DARK_500};
   > Section {
-    margin-top: 192px;
-    width: 1120px;
-    height: 280px;
+    margin-top: 19.2rem;
+    width: 112rem;
+    height: 28rem;
     align-items: center;
     justify-content: space-evenly;
     text-align: end;
@@ -23,16 +23,16 @@ export const Container = styled.div`
       position: relative;
       display: flex;
       align-items: baseline;
-      margin-top: -220.94px;
+      margin-top: -22.094rem;
     }
     > p {
-      font-size: 16px;
+      font-size: 1.6rem;
     }
   }
   > FollowUp {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 27px;
+    gap: 2.7rem;
   }
 `

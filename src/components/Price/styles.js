@@ -5,5 +5,5 @@ export const Container = styled.button`
   color: ${({ theme }) => theme.COLORS.CAKE_200};
 
   font-weight: 400;
-  font-size: 32px;
+  font-size: 3.2rem;
 `

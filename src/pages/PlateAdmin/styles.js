@@ -11,49 +11,49 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARK_500};
 
   .back {
-    margin-top: 24px;
-    margin-left: 130px;
+    margin-top: 2.4rem;
+    margin-left: 13rem;
   }
 
   .plates {
-    margin-top: 42px;
-    margin-left: 130px;
+    margin-top: 4.2rem;
+    margin-left: 13rem;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80%;
-    gap: 48px;
+    gap: 4.8rem;
     > img {
-      width: 390px;
-      height: 390px;
+      width: 39rem;
+      height: 39rem;
     }
   }
   .description {
     > h2 {
-      font-size: 40px;
+      font-size: 4rem;
       line-height: 140%;
     }
     > p {
-      margin-top: 24px;
+      margin-top: 2.4rem;
       font-weight: 400;
-      font-size: 24px;
+      font-size: 2.4rem;
       line-height: 140%;
     }
   }
   .ingredients {
     display: flex;
     flex-direction: row;
-    gap: 12px;
-    margin-top: 24px;
+    gap: 1.2rem;
+    margin-top: 2.4rem;
     > p {
-      font-size: 40px;
+      font-size: 4rem;
       line-height: 140%;
     }
   }
   .ingredient {
     background-color: ${({ theme }) => theme.COLORS.DARK_1000};
-    padding: 4px 8px;
-    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
     > p {
       color: ${({ theme }) => theme.COLORS.LIGHT_100};
     }
@@ -63,7 +63,7 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    margin-top: 48px;
-    gap: 36px;
+    margin-top: 4.8rem;
+    gap: 3.6rem;
   }
 `

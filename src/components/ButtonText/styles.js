@@ -5,12 +5,12 @@ export const Container = styled.button`
   color: ${({ theme }) => theme.COLORS.LIGHT_300};
 
   font-weight: 700;
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 140%;
-  padding: 12px 24px;
+  padding: 1.2rem 2.4rem;
   align-items: center;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   display: flex;
-  gap: 11px;
+  gap: 1.1rem;
 `

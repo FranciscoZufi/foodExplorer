@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: space-around;
   color: ${({ theme }) => theme.COLORS.LIGHT_300};
   background: transparent;
-  gap: 18px;
+  gap: 1.8rem;
   > button {
     border: none;
     background: transparent;

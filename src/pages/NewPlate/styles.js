@@ -10,17 +10,17 @@ export const Container = styled.div`
 
   background-color: ${({ theme }) => theme.COLORS.DARK_500};
   > h1 {
-    margin-top: 34px;
+    margin-top: 3.4rem;
   }
 
   .page {
-    margin: 40px 124px;
+    margin: 4rem 12.4rem;
   }
   .category {
     display: flex;
     flex-direction: row;
-    gap: 32px;
-    margin-top: 32px;
+    gap: 3.2rem;
+    margin-top: 3.2rem;
     > label {
       color: ${({ theme }) => theme.COLORS.LIGHT_400};
     }
@@ -32,40 +32,40 @@ export const Container = styled.div`
       -webkit-appearance: none;
       -moz-appearance: none;
       -ms-appearance: none;
-      min-width: 350px;
+      min-width: 35rem;
 
-      padding: 16px;
+      padding: 1.6rem;
       text-align: center;
       color: ${({ theme }) => theme.COLORS.LIGHT_100};
       background-color: ${({ theme }) => theme.COLORS.DARK_900};
       border: none;
-      border-radius: 5px;
+      border-radius: 0.5rem;
       text-align: start;
     }
   }
   .price {
     display: flex;
     flex-direction: row;
-    gap: 32px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    gap: 3.2rem;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
     > label {
       color: ${({ theme }) => theme.COLORS.LIGHT_400};
     }
     .tags {
       display: flex;
-      gap: 16px;
-      width: 837px;
+      gap: 1.6rem;
+      width: 83.7rem;
       background-color: ${({ theme }) => theme.COLORS.DARK_900};
-      border-radius: 8px;
-      padding: 8px;
+      border-radius: 0.8rem;
+      padding: 0.8rem;
       justify-content: start;
     }
   }
   .buttons {
     display: flex;
     justify-content: end;
-    gap: 32px;
-    margin-top: 32px;
+    gap: 3.2rem;
+    margin-top: 3.2rem;
   }
 `

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.header`
-  height: 77px;
+  height: 7.7rem;
   width: 100vw;
   margin-top: 0;
 
@@ -9,7 +9,7 @@ export const Container = styled.header`
   align-items: center;
 
   justify-content: space-around;
-  padding: 24px 123px;
+  padding: 2.4rem 12.3rem;
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
   > Link {
     text-decoration: none;
@@ -18,6 +18,6 @@ export const Container = styled.header`
   }
   > div {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
   }
 `

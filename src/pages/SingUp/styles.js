@@ -12,28 +12,28 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARK_300};
 
   > h1 {
-    font-size: 42px;
+    font-size: 4.2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 5rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
   }
   > div {
     display: flex;
-    gap: 19px;
+    gap: 1.9rem;
   }
 `
 export const Form = styled.form`
-  padding: 64px;
-  width: 476px;
-  height: 621px;
+  padding: 6.4rem;
+  width: 47.6rem;
+  height: 62.1rem;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 16px;
-  gap: 32px;
+  border-radius: 1.6rem;
+  gap: 3.2rem;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_700};
   > Input {
@@ -41,21 +41,21 @@ export const Form = styled.form`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 12px 14px;
+    padding: 1.2rem 1.4rem;
 
-    border: 1px solid #ffffff;
+    border: 0.1rem solid #ffffff;
     width: 100vw;
-    height: 48px;
+    height: 4.8rem;
   }
   > h2 {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
   }
 
   > label {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_400};
   }
   > Button {

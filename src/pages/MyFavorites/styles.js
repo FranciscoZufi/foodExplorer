@@ -10,14 +10,14 @@ export const Container = styled.div`
 
   background-color: ${({ theme }) => theme.COLORS.DARK_500};
   > h1 {
-    margin-top: 34px;
+    margin-top: 3.4rem;
   }
   > div {
-    margin-top: 32px;
+    margin-top: 3.2rem;
 
-    gap: 32px;
+    gap: 3.2rem;
     display: grid;
-    grid-template-rows: 100px;
+    grid-template-rows: 10rem;
     grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-areas: 'CardFav CardFav CardFav CardFav';
     align-items: center;

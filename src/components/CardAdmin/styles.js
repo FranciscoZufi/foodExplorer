@@ -1,20 +1,20 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  height: 462px;
-  width: 304px;
+  height: 46.2rem;
+  width: 30.4rem;
   display: flex;
   flex-direction: column;
 
   color: ${({ theme }) => theme.COLORS.LIGHT_300};
   background-color: ${({ theme }) => theme.COLORS.DARK_300};
-  gap: 15px;
+  gap: 1.5rem;
   > button {
     display: flex;
     background-color: ${({ theme }) => theme.COLORS.DARK_300};
     justify-content: end;
-    margin-top: 16px;
-    margin-right: 18px;
+    margin-top: 1.6rem;
+    margin-right: 1.8rem;
   }
   > div {
     display: flex;
@@ -22,12 +22,12 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 15px;
+    gap: 1.5rem;
     > h1 {
-      font-size: 24px;
+      font-size: 2.4rem;
     }
     > p {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 `

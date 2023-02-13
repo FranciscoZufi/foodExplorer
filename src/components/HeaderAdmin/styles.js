@@ -1,14 +1,13 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  height: 77px;
+  height: 7.7rem;
   width: 100vw;
 
   display: flex;
   align-items: center;
-  padding: 24px 123px;
+  padding: 2.4rem 12.3rem;
   justify-content: space-around;
-  margin-top: 0px;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
 
@@ -16,11 +15,11 @@ export const Container = styled.div`
     display: flex;
     align-items: flex-start;
 
-    gap: 10px;
+    gap: 1rem;
     > div {
       > p {
         text-align: end;
-        font-size: 12px;
+        font-size: 1.2rem;
         color: ${({ theme }) => theme.COLORS.CAKE_200};
       }
     }
