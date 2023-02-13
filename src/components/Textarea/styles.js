@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.textarea`
-  width: 100%;
+  min-width: 32rem;
   height: 15rem;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_900};

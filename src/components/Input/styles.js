@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   > input {
-    min-width: 35rem;
+    min-width: 32rem;
     height: 100%;
 
     padding: 1.6rem;
