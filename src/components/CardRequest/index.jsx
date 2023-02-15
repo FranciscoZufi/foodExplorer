@@ -12,7 +12,7 @@ export function CardRequest() {
         <span>1 x Torradas de Parma</span>
         <p>RS 25,97</p>
       </div>
-      <div className='button'>
+        <div className='button'>
           <button>Excluir</button>
         </div>
       </div>

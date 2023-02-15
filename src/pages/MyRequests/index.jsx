@@ -2,9 +2,11 @@ import { Container} from './styles'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/footer'
 import { ButtonText } from '../../components/ButtonText'
+import { Button } from '../../components/Button'
 import qrcode from '../../assets/qrcode.svg'
 import pix from '../../assets/pix.svg'
 import card from '../../assets/card.svg'
+import pedido from '../../assets/pedido.svg'
 import { CardRequest } from '../../components/CardRequest'
 
 
@@ -28,17 +30,26 @@ return (
    <div className='payments'>
     <h1>Pagamento</h1>
     <div className='formOfPayment'>
-      <ButtonText  icon={pix} title='PIX'/>
-      <ButtonText icon={card} title='Crédito'/>
+      <div className='pix'><ButtonText  icon={pix} title='PIX'/></div>
+      <div className='card'><ButtonText icon={card} title='Crédito'/></div>
+    </div>
+    <div className='qrcode hide'> 
+      <img src={qrcode} alt="" />
+    </div>
+    <div className='cardPayment'>
+      <div className='nCard'>
+        <label htmlFor='nCard'>Número do Cartão
+        <input id='nCard' placeholder='0000 0000 0000 0000'/></label>
+      </div>
+      <div className='description'>
+        <label htmlFor='validity'>Validade
+        <input id='validity' placeholder='04/25'/></label>
+        <label htmlFor='cvc'>CVC
+        <input id='cvc' placeholder='000'/></label>
+      </div>
+      <Button icon={pedido} title='Finalizar pagamento'/>
     </div>
     
-    <img src={pix} alt="" /> 
-    <h2>PIX</h2>
-    <img src={card} alt="" /> 
-    <h2>Crédito</h2>
-    <img src={qrcode} alt="" />
-    <label>Número do Cartão</label>
-    <input placeholder='0000 0000 0000 0000'/>
    </div>
    </div>
    <Footer />

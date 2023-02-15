@@ -15,7 +15,10 @@ export const Container = styled.div`
   p {
     font-size: 1.2rem;
   }
-
+  .description {
+    display: flex;
+    flex-direction: column;
+  }
   .name {
     display: flex;
     flex-direction: row;

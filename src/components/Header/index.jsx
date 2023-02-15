@@ -20,7 +20,7 @@ export function Header() {
       <Input type="search" placeholder=' Busque por pratos ou ingredientes'/>
       <ButtonText title='Meus favoritos'/>
       <ButtonText title='Histórico de pedidos'/>
-      <Button Icon={pedido} title="Pedidos(0)"/>
+      <Button icon={pedido} title="Pedidos(0)"/>
       <img src={logOut} alt="voltar ao SingIn" />  
     </Container>
   )
