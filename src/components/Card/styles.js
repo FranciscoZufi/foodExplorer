@@ -9,12 +9,16 @@ export const Container = styled.div`
   color: ${({ theme }) => theme.COLORS.LIGHT_300};
   background-color: ${({ theme }) => theme.COLORS.DARK_300};
   gap: 1.5rem;
-  > button {
+  .button {
     display: flex;
-    background-color: ${({ theme }) => theme.COLORS.DARK_300};
-    justify-content: end;
-    margin-top: 1.6rem;
-    margin-right: 1.8rem;
+    align-items: flex-end;
+    justify-content: flex-end;
+    button {
+      background-color: ${({ theme }) => theme.COLORS.DARK_300};
+      border: none;
+      margin-top: 1.6rem;
+      margin-right: 1.8rem;
+    }
   }
   > div {
     display: flex;

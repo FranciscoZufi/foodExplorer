@@ -8,12 +8,13 @@ import { Price } from '../Price'
 export function Card() {
   return (
     <Container>
-      <button type='button'><img src={fav} alt="favorito" /></button>
+      <div className='button'><button type='button'><img src={fav} alt="favorito" /></button></div>
+      
       <div> 
         <img src={image1} alt="prato" />
         <h1>Torradas de Parma</h1>
         <p>Presunto de parma e rúcula em um pão com fermentação natural.</p>
-        <Price title={'R$ 79,97'}/>
+        <Price title='R$ 79,97'/>
       </div>
       <div>   
         <Contador />
