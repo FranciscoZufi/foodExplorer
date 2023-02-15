@@ -3,8 +3,6 @@ import styled from 'styled-components'
 export const Container = styled.div`
   > input {
     min-width: 32rem;
-    height: 100%;
-
     padding: 1.6rem;
     text-align: center;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};

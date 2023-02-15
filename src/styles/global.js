@@ -16,7 +16,7 @@ body {
 
 };
 
-body, input, button, textarea {
+body, input, button, textarea, p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   outline: none;

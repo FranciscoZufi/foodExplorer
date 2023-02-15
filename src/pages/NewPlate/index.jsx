@@ -23,35 +23,35 @@ return (
     <Section title='Adicionar prato'>
       <div className='category'>
         <div className='file'>
-        <label htmlFor='file'>Imagem do prato</label> 
-        <Input icon={file} placeholder='Selecione imagem' id='file'  type='file'/>
+        <label htmlFor='file'>Imagem do prato 
+        <Input icon={file} placeholder='Selecione imagem' id='file'  type='file'/></label>
         </div>
         <div className='name'>
-        <label htmlFor='name'>Nome</label> 
-        <Input id='name' type='text' placeholder='Salada Ceasar'/>
+        <label htmlFor='name'>Nome
+        <Input id='name' type='text' placeholder='Salada Ceasar'/></label> 
         </div>
         <div>
-        <label htmlFor='select'>Categoria</label>
+        <label htmlFor='select'>Categoria
           <select id='select'>
             <option value='refeicao'>Refeição</option>
             <option value='bebida'>Bebida</option>
             <option value='sopa'>Sopa</option>
-          </select>
+          </select></label>
          </div>
       </div>
       <div className='price'> 
-        <label htmlFor='ingredients'>Ingredientes</label>
+        <label htmlFor='ingredients'>Ingredientes
         <div className='tags'>
           <Ingredients placeholder='pão'/>
           <Ingredients id='ingredients' placeholder='Novo Ingrediente' isNew/>
-        </div>
-        <label htmlFor='price'>Preço</label>
-          <Input id='price' type='text' placeholder='R$ 00,00'/> 
+        </div></label>
+        <label htmlFor='price'>Preço
+          <Input id='price' type='text' placeholder='R$ 00,00'/> </label>
         
       </div>
      <div className='description'>
-        <label htmlFor='description'>Descrição</label>
-        <Textarea id='description' placeholder='A Salada César é uma opção refrescante para o verão.'></Textarea>
+        <label htmlFor='description'>Descrição
+        <Textarea id='description' placeholder='A Salada César é uma opção refrescante para o verão.'></Textarea></label>
       
      </div>
       <div className='buttons'>
