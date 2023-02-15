@@ -9,11 +9,12 @@ export function SingIn() {
   
 return (
   <Container>
-    <div>
-      <img src={explorer} alt="" />
+    <div className='logo'>
+      <img src={explorer} alt="logo food explorer" />
       <h1>food explorer</h1>
     </div>
     <Form>
+      <div className='form'>
       <h2>Faça login</h2>
       <label>
         Email
@@ -25,6 +26,7 @@ return (
       </label>
       <Button title="Entrar" />
       <Link to='/register'>Criar uma conta</Link>
+      </div>
     </Form>
   </Container>
 )

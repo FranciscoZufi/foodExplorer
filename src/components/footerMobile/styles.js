@@ -20,7 +20,7 @@ export const Container = styled.div`
     align-items: center;
 
     > h1 {
-      font-family: 'Roboto';
+      font-family: 'Roboto', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 1.5rem;

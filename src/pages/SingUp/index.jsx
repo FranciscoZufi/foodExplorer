@@ -9,11 +9,12 @@ export function SingUp() {
   
 return (
   <Container>
-    <div>
+    <div className='logo'>
       <img src={explorer} alt="" />
       <h1>food explorer</h1>
     </div>
     <Form>
+      <div className='form'>
       <h2>Crie sua conta</h2>
       <label>
         Seu nome
@@ -29,6 +30,7 @@ return (
       </label>
       <Button title="Criar conta" />
       <Link to='/'>Já tenho uma conta</Link>
+      </div>
     </Form>
   </Container>
 )

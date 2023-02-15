@@ -18,7 +18,7 @@ export const Container = styled.footer`
     gap: 1rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_700};
     > h1 {
-      font-family: 'Roboto';
+      font-family: 'Roboto', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 2.4rem;
