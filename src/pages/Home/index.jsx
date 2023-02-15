@@ -1,8 +1,6 @@
 import { Container} from './styles'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/footer'
-import { Section }from '../../components/Section'
-import { FollowUp }from '../../components/FollowUp'
 import { Card }from '../../components/Card'
 import pngegg from '../../assets/pngegg.png'
 
@@ -12,28 +10,46 @@ export function Home() {
 return (
   <Container>
    <Header />
-   <Section title='Sabores inigualáveis'>
-    <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
+   <div className='folder'>
     <img src={pngegg} alt="" />
-   </Section>
-  <FollowUp title='Refeições'>
+    <div>
+    <h1>Sabores inigualáveis</h1>
+    <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
+    </div>
+   </div>
+  <div className='carousel'>
+    <div className='title'>
+      <h2>Refeições</h2>
+    </div>
+    <div className='cards'>
     <Card/>
     <Card/>
     <Card/>
     <Card/>
-  </FollowUp>
-  <FollowUp title='Sobremesas'>
+    </div>
+  </div>
+  <div className='carousel'>
+    <div className='title'>
+      <h2>Sobremesas</h2>
+    </div>
+    <div className='cards'>
     <Card/>
     <Card/>
     <Card/>
     <Card/>
-  </FollowUp>
-  <FollowUp title='Bebidas'>
+    </div>
+  </div>
+  <div className='carousel'>
+    <div className='title'>
+      <h2>Bebidas</h2>
+    </div>
+    <div className='cards'>
     <Card/>
     <Card/>
     <Card/>
     <Card/>
-  </FollowUp>
+    </div>
+  </div>
   
    <Footer />
   </Container>

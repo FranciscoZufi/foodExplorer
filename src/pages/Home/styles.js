@@ -10,29 +10,43 @@ export const Container = styled.div`
   justify-content: center;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_500};
-  > Section {
+
+  .folder {
     margin-top: 19.2rem;
     max-width: 112rem;
+    width: 100%;
     height: 28rem;
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;
     text-align: end;
     background-color: ${({ theme }) => theme.COLORS.DARK_700};
-
-    > img {
+    img {
       position: relative;
       display: flex;
       align-items: baseline;
       margin-top: -22.094rem;
     }
-    > p {
+    h1 {
+      font-size: 4rem;
+    }
+    p {
       font-size: 1.6rem;
     }
   }
-  > FollowUp {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 2.7rem;
+  .carousel {
+    margin-top: 6.3rem;
+    .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 2.7rem;
+    }
+    .title {
+      margin-bottom: 2.3rem;
+    }
+    h2 {
+      font-size: 3.2rem;
+      font-weight: 500;
+    }
   }
 `
