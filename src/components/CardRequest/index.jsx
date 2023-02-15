@@ -1,5 +1,4 @@
 import { Container } from './styles'
-import { ButtonText } from '../ButtonText'
 import image1 from '../../assets/image1.png'
 
 export function CardRequest() {
@@ -8,14 +7,15 @@ export function CardRequest() {
       <div className='img'> 
         <img src={image1} alt="prato" />
       </div>
+      <div className='description'>
       <div className='name'>
-        <h1>Torradas de Parma</h1>
+        <span>1 x Torradas de Parma</span>
         <p>RS 25,97</p>
-        <div className='button'>
+      </div>
+      <div className='button'>
           <button>Excluir</button>
         </div>
       </div>
-        
     </Container>
   )
 } 

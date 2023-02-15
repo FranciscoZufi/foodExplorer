@@ -9,7 +9,7 @@ export const Container = styled.div`
   width: 100vw;
   background-color: ${({ theme }) => theme.COLORS.DARK_500};
 
-  @media (min-width: 768px) {
+  @media (min-width: 76.8em) {
     height: 100vh;
     width: 100vw;
 

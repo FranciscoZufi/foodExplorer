@@ -1,5 +1,5 @@
 import { Container } from './styles'
-import { ButtonText } from '../ButtonText'
+
 import image1 from '../../assets/image1.png'
 
 export function CardFav() {

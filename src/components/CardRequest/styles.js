@@ -7,6 +7,21 @@ export const Container = styled.div`
   align-items: center;
   color: ${({ theme }) => theme.COLORS.LIGHT_300};
   background-color: transparent;
+  span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
   .img {
     > img {
       max-width: 10rem;
@@ -15,6 +30,7 @@ export const Container = styled.div`
   }
   .button {
     button {
+      font-size: 1.2rem;
       background: none;
       border: none;
       color: ${({ theme }) => theme.COLORS.TOMATO_400};

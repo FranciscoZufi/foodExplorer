@@ -11,7 +11,7 @@ export const Container = styled.div`
 
   background-color: ${({ theme }) => theme.COLORS.DARK_300};
 
-  > h1 {
+  h1 {
     font-size: 4.2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -63,7 +63,11 @@ export const Form = styled.form`
     align-self: stretch;
     flex-grow: 0;
   }
-  > a {
+  a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
   }
 `

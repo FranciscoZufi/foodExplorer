@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  height: 100%;
+  height: 100vh;
   width: 100vw;
 
   display: flex;
@@ -9,20 +9,36 @@ export const Container = styled.div`
   align-items: center;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_500};
-  > h1 {
-    margin-top: 3.4rem;
-  }
-  > div {
+
+  .page {
     margin-top: 3.2rem;
     gap: 3.2rem;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    h1 {
+      font-size: 3.2rem;
+      margin-top: 3.4rem;
+      margin-bottom: 3.4rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 1.8rem;
+    }
+  }
+  .formOfPayment {
+    display: flex;
+  }
+  .payments {
+    margin-top: 3.4rem;
+    h2 {
+      font-size: 1.6rem;
+    }
   }
   .card {
     display: flex;
     flex-direction: column;
+
     > input {
       background: transparent;
     }

@@ -9,16 +9,16 @@ export const Container = styled.div`
 
   justify-content: space-around;
 
-  background-color: ${({ theme }) => theme.COLORS.DARK_300};
+  background-color: ${({ theme }) => theme.COLORS.DARK_400};
 
-  > h1 {
+  h1 {
     font-size: 4.2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 5rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
   }
-  > div {
+  div {
     display: flex;
     gap: 1.9rem;
   }
@@ -64,6 +64,10 @@ export const Form = styled.form`
     flex-grow: 0;
   }
   > a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
   }
 `
