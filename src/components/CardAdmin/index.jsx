@@ -8,7 +8,8 @@ import { Price } from '../Price'
 export function CardAdmin() {
   return (
     <Container>
-      <button type='button'><img src={edit} alt="favorito" /></button>
+      <div className='button'><button type='button'><img src={edit} alt="favorito" /></button></div>
+      
       <div> 
         <img src={image1} alt="prato" />
         <h1>Torradas de Parma</h1>

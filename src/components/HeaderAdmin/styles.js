@@ -4,6 +4,7 @@ export const Container = styled.div`
   height: 9.6rem;
   width: 100vw;
   padding: 2.4rem 12.3rem;
+  gap: 1rem;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
 
@@ -40,7 +41,7 @@ export const Container = styled.div`
     .desktop {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
       flex-direction: row;
       h1 {
         font-size: 2.4rem;
