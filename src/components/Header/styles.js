@@ -19,14 +19,6 @@ export const Container = styled.header`
     color: ${({ theme }) => theme.COLORS.LIGHT_300};
     background-color: ${({ theme }) => theme.COLORS.DARK_600};
   }
-  .desktop {
-    display: flex;
-    align-items: center;
-    padding: 2.8rem;
-    justify-content: space-evenly;
-    flex-direction: row;
-    gap: 1rem;
-  }
   .mobile {
     display: flex;
     align-items: center;
@@ -62,7 +54,22 @@ export const Container = styled.header`
     gap: 0.8rem;
     align-items: center;
   }
-  .hide {
-    display: none;
+  @media (max-width: 64em) {
+    .desktop {
+      display: none;
+    }
+  }
+  @media (min-width: 64em) {
+    .desktop {
+      display: flex;
+      align-items: center;
+      padding: 2.8rem;
+      justify-content: space-evenly;
+      flex-direction: row;
+      gap: 1rem;
+    }
+    .mobile {
+      display: none;
+    }
   }
 `

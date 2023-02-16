@@ -14,7 +14,7 @@ import menu from '../../assets/menu.svg'
 export function Header() {
   return (
     <Container>
-      <div className='desktop hide'>
+      <div className='desktop'>
         <img src={explorer} alt="logo food explorer" />
         <h1> food explorer</h1>
         <Input type="search" placeholder=' Busque por pratos ou ingredientes'/>
