@@ -40,6 +40,7 @@ export const Container = styled.div`
       flex-direction: row;
       justify-content: space-evenly;
       gap: 2.7rem;
+      margin-bottom: 4.7rem;
     }
     .title {
       margin-bottom: 2.3rem;
