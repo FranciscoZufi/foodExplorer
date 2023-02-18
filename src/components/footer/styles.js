@@ -6,10 +6,9 @@ export const Container = styled.footer`
 
   display: flex;
   align-items: center;
-  margin-top: 1rem;
-  bottom: 0;
+  gap: 5rem;
 
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 2.4rem 12.3rem;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_600};

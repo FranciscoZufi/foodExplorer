@@ -31,7 +31,7 @@ export const Container = styled.div`
     width: 2.4rem;
     height: 2.4rem;
   }
-  @media (min-width: 76.8em) {
+  @media (min-width: 64em) {
     .imgFile {
       max-width: 22.9rem;
       width: 100%;

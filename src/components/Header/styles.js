@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.header`
   height: 10.4rem;
   width: 100vw;
+
   margin-top: 0;
 
   display: flex;

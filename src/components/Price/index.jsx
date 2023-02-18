@@ -1,6 +1,6 @@
 import {Container} from './styles'
 
-export function Price({ title }) {
+export function Price({title}) {
 
   return(
   <Container>

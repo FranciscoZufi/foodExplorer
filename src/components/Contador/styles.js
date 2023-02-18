@@ -7,11 +7,15 @@ export const Container = styled.div`
   color: ${({ theme }) => theme.COLORS.LIGHT_300};
   background: transparent;
   gap: 1.8rem;
-  > button {
+  button {
     border: none;
     background: transparent;
     display: flex;
     align-items: center;
     justify-content: baseline;
+  }
+  span {
+    font-size: 2rem;
+    max-width: 2.4rem;
   }
 `
