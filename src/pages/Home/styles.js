@@ -35,6 +35,9 @@ export const Container = styled.div`
   }
   .carousel {
     margin-top: 6.3rem;
+    display: flex;
+    flex-direction: column;
+
     .title {
       margin-bottom: 2.3rem;
       h2 {
@@ -44,11 +47,13 @@ export const Container = styled.div`
     }
     .view {
       position: relative;
-      padding: 15px;
-      max-width: 102.4rem;
+      display: flex;
+      overflow: hidden;
+      max-width: 110rem;
 
-      .gallery-wrapper {
-        overflow-x: auto;
+      .cards {
+        display: flex;
+        gap: 15px;
       }
       .arrow-left,
       .arrow-right {
@@ -60,10 +65,8 @@ export const Container = styled.div`
         font-size: 20px;
         line-height: 250px;
         width: 40px;
-        color: #fff;
-        transition: all 600ms ease-in-out;
-        background: linear-gradient(to left, transparent 0%, black 200%);
-        opacity: 1;
+        color: ${({ theme }) => theme.COLORS.LIGHT_100};
+        background: none;
         cursor: pointer;
         border: none;
       }
@@ -72,19 +75,7 @@ export const Container = styled.div`
         right: 0;
         left: auto;
         text-align: right;
-        background: linear-gradient(to right, transparent 0%, black 200%);
-      }
-      .cards {
-        display: flex;
-        flex-flow: row nowrap;
-        gap: 15px;
-      }
-      .gallery-wrapper::-webkit-scrollbar {
-        display: none;
-      }
-      .gallery-wrapper {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
+        background: none;
       }
     }
   }
