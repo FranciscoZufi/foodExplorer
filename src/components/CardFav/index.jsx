@@ -1,4 +1,5 @@
 import { Container } from './styles'
+import { ButtonText } from '../ButtonText'
 
 import image1 from '../../assets/image1.png'
 
@@ -11,7 +12,7 @@ export function CardFav() {
       <div className='name'>
         <h1>Torradas de Parma</h1>
         <div className='button'>
-          <button>Remover dos Favoritos</button>
+          <ButtonText title='Remover dos Favoritos' />
         </div>
       </div>
         

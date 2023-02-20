@@ -8,13 +8,19 @@ export const Container = styled.div`
   color: ${({ theme }) => theme.COLORS.LIGHT_300};
   background-color: transparent;
   .img {
-    > img {
+    img {
       max-width: 10rem;
       height: 10rem;
     }
   }
+  .name {
+    h1 {
+      font-size: 2rem;
+    }
+  }
   .button {
     button {
+      font-size: 1.2rem;
       background: none;
       border: none;
       color: ${({ theme }) => theme.COLORS.TOMATO_400};
