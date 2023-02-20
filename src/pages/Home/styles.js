@@ -21,7 +21,7 @@ export const Container = styled.div`
     text-align: end;
     background-color: ${({ theme }) => theme.COLORS.DARK_700};
     img {
-      max-width: 19.1rem;
+      width: 19.1rem;
       position: relative;
       display: flex;
       align-items: baseline;
@@ -97,6 +97,7 @@ export const Container = styled.div`
       background-color: ${({ theme }) => theme.COLORS.DARK_700};
       img {
         position: relative;
+        width: 63.2rem;
         display: flex;
         align-items: baseline;
         margin-top: -22.094rem;

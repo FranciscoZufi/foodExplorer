@@ -10,7 +10,7 @@ export function CardAdmin() {
     <Container>
       <div className='button'><button type='button'><img src={edit} alt="favorito" /></button></div>
       
-      <div> 
+      <div className='description'> 
         <img src={image1} alt="prato" />
         <h1>Torradas de Parma</h1>
         <p>Presunto de parma e rúcula em um pão com fermentação natural.</p>
