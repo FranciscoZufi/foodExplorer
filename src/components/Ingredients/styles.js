@@ -14,7 +14,7 @@ export const Container = styled.div`
 
   border-radius: 1rem;
 
-  > button {
+  button {
     border: none;
     background: none;
   }
@@ -27,7 +27,7 @@ export const Container = styled.div`
     padding-right: 1.6rem;
   }
 
-  > input {
+  input {
     min-width: 7rem;
 
     padding: 0.8rem;

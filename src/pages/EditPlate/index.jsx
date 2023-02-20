@@ -16,47 +16,56 @@ import file from '../../assets/file.svg'
 export function EditPlate() {
   
 return (
+
   <Container>
-   <HeaderAdmin />
+    <HeaderAdmin />
     <div className='page'>
     <ButtonText icon={back} title='Voltar'/>
     <Section title='Editar prato'>
       <div className='category'>
-        <label htmlFor='file'>Imagem do prato 
-        <div className='imgFile'>
-          <img src={file} alt="" id='imgInput'/>
-          <p>Selecione imagem</p>
-          </div>
-        <Input placeholder='Selecione imagem' id='file'  type='file' accept='image/*'/></label>
-      <label htmlFor='name'>Nome 
-      <Input id='name' type='text' placeholder='Salada Ceasar' /></label>
-      <label htmlFor='select'>Categoria
-        <select id='select'>
-          <option value='refeicao'>Refeição</option>
-          <option value='bebida'>Bebida</option>
-          <option value='sopa'>Sopa</option>
-        </select></label>
+        <div className='file'>
+        <label htmlFor='file'>Imagem do prato </label>
+        <div className='inputFile'>
+          <img src={file} alt="file" />
+          <h3>Selecione imagem</h3>
+          <Input placeholder='Selecione imagem' id='file'  type='file'/>
+        </div>
+        
+        </div>
+        <div className='name'>
+        <label htmlFor='name'>Nome</label> 
+        <Input id='name' type='text' placeholder='Salada Ceasar'/>
+        </div>
+        <div className='select'>
+        <label htmlFor='select'>Categoria</label>
+          <select id='select'>
+            <option value='refeicao'>Refeição</option>
+            <option value='bebida'>Bebida</option>
+            <option value='sopa'>Sopa</option>
+          </select>
+         </div>
       </div>
-      <div className='price'> 
-        <label htmlFor='ingredients'>Ingredientes
+      <div className='priceIngredients'> 
+      <div className='ingredients'>
+        <label htmlFor='ingredients'>Ingredientes</label>
         <div className='tags'>
           <Ingredients placeholder='pão'/>
           <Ingredients id='ingredients' placeholder='Novo Ingrediente' isNew/>
-        </div></label>
-        <label htmlFor='price'>Preço
-          <Input id='price' type='text' placeholder='R$ 00,00'/> </label>
-        
+        </div>
+        </div>
+        <div className='price'>
+        <label htmlFor='price'>Preço</label>
+        <Input id='price' type='text' placeholder='R$ 00,00'/> 
+        </div>
       </div>
      <div className='description'>
-        <label htmlFor='description'>Descrição
-        <Textarea id='description' placeholder='A Salada César é uma opção refrescante para o verão.'></Textarea></label>
-      
+        <label htmlFor='description'>Descrição</label>
+        <Textarea id='description' placeholder='A Salada César é uma opção refrescante para o verão.'></Textarea>
      </div>
       <div className='buttons'>
-        <ButtonText title='Excluir prato'/>
+        <ButtonText title='Excluir'/>
         <ButtonSave title='Salvar Alterações'/>
       </div>
-      
     </Section>
     </div>
    <Footer />
