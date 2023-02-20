@@ -17,7 +17,7 @@ return (
   <Container>
    <Header />
    <div className='page'>
-    <div className='request'>
+    <div className='request hide'>
       <h1>Meu Pedido</h1>
       <div className='cardsRequest'>
         <CardRequest />
@@ -26,6 +26,9 @@ return (
         <CardRequest />
       </div>
       <h2>Total: R$ 103,88</h2>
+      <div className='buttonAdvance'>
+        <Button title='Avançar'/>
+      </div>
    </div>
    <div className='payments'>
     <h1>Pagamento</h1>
@@ -52,7 +55,7 @@ return (
     
    </div>
    </div>
-   <Footer />
+   <Footer className='footer'/>
   </Container>
 )
 }
