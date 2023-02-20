@@ -68,6 +68,9 @@ export const Container = styled.header`
       justify-content: space-evenly;
       flex-direction: row;
       gap: 1rem;
+      input {
+        width: 60rem;
+      }
     }
     .mobile {
       display: none;

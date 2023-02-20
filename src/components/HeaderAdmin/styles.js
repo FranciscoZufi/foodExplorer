@@ -43,6 +43,9 @@ export const Container = styled.div`
       align-items: center;
       justify-content: space-between;
       flex-direction: row;
+      input {
+        width: 60rem;
+      }
       h1 {
         font-size: 2.4rem;
       }
