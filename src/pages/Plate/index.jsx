@@ -1,9 +1,7 @@
 import { Container} from './styles'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/footer'
-
 import { ButtonText } from '../../components/ButtonText'
-import { Ingredients } from '../../components/Ingredients'
 import { Contador } from '../../components/Contador'
 import { Button } from '../../components/Button'
 import back from '../../assets/back.svg'
