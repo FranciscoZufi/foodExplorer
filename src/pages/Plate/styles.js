@@ -75,6 +75,7 @@ export const Container = styled.div`
       margin-top: 4.2rem;
       margin-left: 13rem;
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
       width: 80%;
@@ -102,7 +103,7 @@ export const Container = styled.div`
       gap: 1.2rem;
       margin-top: 2.4rem;
       p {
-        font-size: 4rem;
+        font-size: 1.4rem;
         line-height: 140%;
       }
     }
