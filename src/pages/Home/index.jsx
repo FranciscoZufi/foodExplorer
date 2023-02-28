@@ -15,12 +15,12 @@ export function Home() {
   const card = document.querySelectorAll("#cards cards")
   let idx = 0
   function carrosselUp(){
-    console.log('chamou')
+    
     idx++
     if(idx > card.length - 1){
       idx = 0
     }
-    console.log('chegou aqui')
+   
   }
   function carrosselDown(){
     idx--

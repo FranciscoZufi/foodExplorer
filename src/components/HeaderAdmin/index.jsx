@@ -5,10 +5,17 @@ import  logOut  from '../../assets/logOut.svg'
 import { Button } from '../Button'
 import { ButtonText } from '../ButtonText'
 import menu from '../../assets/menu.svg'
-
+import { useAuth } from '../../hooks/auth'
+import { useNavigate} from 'react-router-dom'
 
 
 export function HeaderAdmin() {
+  const { signOut} = useAuth() 
+  const navigate = useNavigate()
+  function handleSignOut(){
+    navigate('/')
+    signOut()
+}
   return (
     <Container>
       <div className='desktop'>
@@ -21,7 +28,7 @@ export function HeaderAdmin() {
         </div>
         <Input type="text" placeholder=' Busque por pratos ou ingredientes'/>
         <Button title="Novo prato"/>
-        <ButtonText icon={logOut}/>
+        <ButtonText icon={logOut} onClick={handleSignOut}/>
         </div>
         <div className="mobile">
           <ButtonText icon={menu}/>

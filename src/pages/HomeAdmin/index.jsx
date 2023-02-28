@@ -1,5 +1,5 @@
 import { Container} from './styles'
-import { Header } from '../../components/Header'
+import { HeaderAdmin } from '../../components/HeaderAdmin'
 import { Footer } from '../../components/footer'
 import { CardAdmin }from '../../components/CardAdmin'
 import { ButtonText } from '../../components/ButtonText'
@@ -15,12 +15,12 @@ export function HomeAdmin() {
   const card = document.querySelectorAll("#cards cards")
   let idx = 0
   function carrosselUp(){
-    console.log('chamou')
+    
     idx++
     if(idx > card.length - 1){
       idx = 0
     }
-    console.log('chegou aqui')
+    
   }
   function carrosselDown(){
     idx--
@@ -31,7 +31,7 @@ export function HomeAdmin() {
   
 return (
   <Container>
-   <Header />
+   <HeaderAdmin />
    <div className='folder'>
     <img src={pngegg} alt="" />
     <div className='description'>

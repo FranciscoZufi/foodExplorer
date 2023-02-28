@@ -6,12 +6,20 @@ import { Button } from '../Button'
 import { ButtonText } from '../ButtonText'
 import pedido from '../../assets/pedido.svg'
 import menu from '../../assets/menu.svg'
+import { useAuth } from '../../hooks/auth'
+import { useNavigate} from 'react-router-dom'
 
 
 
 
 
 export function Header() {
+  const { signOut} = useAuth() 
+  const navigate = useNavigate()
+  function handleSignOut(){
+    navigate('/')
+    signOut()
+}
   return (
     <Container>
       <div className='desktop'>
@@ -21,7 +29,7 @@ export function Header() {
         <ButtonText title='Meus favoritos'/>
         <ButtonText title='Histórico de pedidos'/>
         <Button icon={pedido} title="Pedidos(0)"/>
-        <ButtonText icon={logOut}/> 
+        <ButtonText icon={logOut} onClick={handleSignOut}/> 
       </div>
       <div className='mobile'>
         <ButtonText icon={menu}/>
