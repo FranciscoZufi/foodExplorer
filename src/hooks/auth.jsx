@@ -3,7 +3,7 @@ import { api } from '../services/api'
 
 export const AuthContext = createContext({})
 
-function AuthProvider({ children }) {
+function AuthProvider({ children  }) {
   const [data, setData] = useState({})
   async function singIn({email, password}){
     try{
@@ -26,10 +26,9 @@ function AuthProvider({ children }) {
 
   function signOut(){
     const token = localStorage.removeItem('@foodExplorer:token')
-    const admin = localStorage.removeItem('@foodExplorer:admin')
     const user = localStorage.removeItem('@foodExplorer:user')
 
-    setData({token, admin, user})
+    setData({token,  user})
   }
   useEffect(() => {
     const token = localStorage.getItem('@foodExplorer:token')

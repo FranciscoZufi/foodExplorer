@@ -6,7 +6,7 @@ import { Button } from '../Button'
 import { ButtonText } from '../ButtonText'
 import pedido from '../../assets/pedido.svg'
 import menu from '../../assets/menu.svg'
-import { useAuth } from '../../hooks/auth'
+import {  useAuth } from '../../hooks/auth'
 import { useNavigate} from 'react-router-dom'
 
 
@@ -14,9 +14,10 @@ import { useNavigate} from 'react-router-dom'
 
 
 export function Header() {
-  const { signOut} = useAuth() 
+  const { signOut } = useAuth() 
   const navigate = useNavigate()
   function handleSignOut(){
+    console.log('cheguei aqui')
     signOut()
     navigate('/')
 }
