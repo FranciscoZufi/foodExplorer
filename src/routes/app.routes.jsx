@@ -27,6 +27,7 @@ export const  AppRoutes = () => {
     </Routes>
   )
     } else{
+      return(
       <Routes>
       <Route path="/" index element={<Home/>}/>
       <Route path="/myRequests" element={<MyRequests/>}/>
@@ -34,6 +35,7 @@ export const  AppRoutes = () => {
       <Route path="/orderHistory" element={<OrderHistory/>}/>
       <Route path="/plate" element={<Plate/>}/>
     </Routes>
+    )
     }
 }
 return(

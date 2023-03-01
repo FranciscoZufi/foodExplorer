@@ -17,8 +17,8 @@ export function Header() {
   const { signOut} = useAuth() 
   const navigate = useNavigate()
   function handleSignOut(){
-    navigate('/')
     signOut()
+    navigate('/')
 }
   return (
     <Container>
