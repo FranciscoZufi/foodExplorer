@@ -11,9 +11,12 @@ export function CardAdmin() {
   function navigateToPlateAdmin(){
     navigate('/plateAdmin')
   }
+  function navigateToEditPlate(){
+    navigate('/editPlate')
+  }
   return (
     <Container>
-      <div className='button'><button type='button'><img src={edit} alt="favorito" /></button></div>
+      <div className='button'><button type='button' onClick={navigateToEditPlate}><img src={edit} alt="favorito" /></button></div>
       
       <div className='description'> 
       <button id='button' onClick={navigateToPlateAdmin}>

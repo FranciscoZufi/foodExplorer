@@ -3,18 +3,24 @@ import { HeaderAdmin } from '../../components/HeaderAdmin'
 import { Footer } from '../../components/footer'
 
 import { ButtonText } from '../../components/ButtonText'
-import { Ingredients } from '../../components/Ingredients'
-import { Contador } from '../../components/Contador'
+
 import { Button } from '../../components/Button'
 import image1 from '../../assets/image1.png'
 import back from '../../assets/back.svg'
+import { useNavigate } from 'react-router-dom';
 
 export function PlateAdmin() {
-  
+  const navigate = useNavigate()
+  function navigateToHomeAdmin(){
+    navigate('/')
+  }
+  function navigateToEditPlate(){
+    navigate('/editPlate')
+  }
 return (
   <Container>
    <HeaderAdmin/>
-   <div className='back'><ButtonText icon={back} title='Voltar'/></div>
+   <div className='back'><ButtonText icon={back} title='Voltar' onClick={navigateToHomeAdmin}/></div>
    <div className='plates'>
     <img src={image1} alt="Prato" />
     <div className='description'>
@@ -29,7 +35,7 @@ return (
         <div className='ingredient'><p>tomate</p></div>
       </div>
       <div className='pedido'>
-        <Button  title='Editar prato'/>
+        <Button  title='Editar prato' onClick={navigateToEditPlate}/>
       </div>
     </div>
    </div>

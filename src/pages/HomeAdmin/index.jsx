@@ -11,7 +11,7 @@ import right from '../../assets/right.svg'
 
 
 export function HomeAdmin() {
-  
+
   const card = document.querySelectorAll("#cards cards")
   let idx = 0
   function carrosselUp(){

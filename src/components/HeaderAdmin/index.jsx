@@ -15,7 +15,10 @@ export function HeaderAdmin() {
   function handleSignOut(){
     signOut()
     navigate('/')
-}
+  }
+  function navigateToNewPlate(){
+    navigate('/newPlate')
+  }
   return (
     <Container>
       <div className='desktop'>
@@ -27,7 +30,7 @@ export function HeaderAdmin() {
         </div>
         </div>
         <Input type="text" placeholder=' Busque por pratos ou ingredientes'/>
-        <Button title="Novo prato"/>
+        <Button title="Novo prato" onClick={navigateToNewPlate}/>
         <ButtonText icon={logOut} onClick={handleSignOut}/>
         </div>
         <div className="mobile">

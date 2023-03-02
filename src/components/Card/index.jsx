@@ -15,7 +15,6 @@ export function Card() {
     <Container>
      
       <div className='button'> 
-      
         <button type='button'><img src={fav} alt="favorito" /></button>
       </div>
       <div className='description'> 

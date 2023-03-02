@@ -9,18 +9,22 @@ import back from '../../assets/back.svg'
 import { Ingredients } from '../../components/Ingredients'
 import { ButtonSave } from '../../components/ButtonSave'
 import file from '../../assets/file.svg'
+import { useNavigate} from 'react-router-dom'
 
 
 
 
 export function NewPlate() {
-  
+  const navigate = useNavigate()
+  function navigateToHomeAdmin(){
+    navigate('/')
+  }
 return (
 
   <Container>
     <HeaderAdmin />
     <div className='page'>
-    <ButtonText icon={back} title='Voltar'/>
+    <ButtonText icon={back} title='Voltar' onClick={navigateToHomeAdmin}/>
     <Section title='Adicionar prato'>
       <div className='category'>
         <div className='file'>
