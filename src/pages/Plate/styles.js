@@ -99,22 +99,28 @@ export const Container = styled.div`
     }
     .ingredients {
       display: flex;
+      align-items: center;
+      justify-content: center;
       flex-direction: row;
-      gap: 1.2rem;
+      gap: 2.4rem;
       margin-top: 2.4rem;
       p {
         font-size: 1.4rem;
-        line-height: 140%;
+        color: ${({ theme }) => theme.COLORS.LIGHT_100};
       }
     }
+
     .ingredient {
       background-color: ${({ theme }) => theme.COLORS.DARK_1000};
       padding: 0.4rem 0.8rem;
       border-radius: 0.5rem;
-      p {
-        color: ${({ theme }) => theme.COLORS.LIGHT_100};
-      }
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
     }
+
     .pedido {
       display: flex;
       flex-direction: row;

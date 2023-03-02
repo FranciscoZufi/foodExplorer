@@ -6,13 +6,17 @@ import { Contador } from '../../components/Contador'
 import { Button } from '../../components/Button'
 import back from '../../assets/back.svg'
 import image1 from '../../assets/image1.png'
+import { useNavigate } from 'react-router-dom';
 
 export function Plate() {
-  
+  const navigate = useNavigate()
+  function navigateToHome(){
+    navigate('/')
+  }
 return (
   <Container>
    <Header />
-   <div className='back'><ButtonText icon={back} title='Voltar'/></div>
+   <div className='back'><ButtonText icon={back} title='Voltar' onClick={navigateToHome}/></div>
    <div className='plates'>
     <img src={image1} alt="Prato" />
     <div className='description'>

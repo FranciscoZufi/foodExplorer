@@ -9,6 +9,10 @@ export const Container = styled.div`
 
   color: ${({ theme }) => theme.COLORS.LIGHT_300};
   background-color: ${({ theme }) => theme.COLORS.DARK_300};
+  #button {
+    background-color: transparent;
+    border: none;
+  }
 
   .button {
     display: flex;
