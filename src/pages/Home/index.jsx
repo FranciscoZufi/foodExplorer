@@ -6,28 +6,29 @@ import { ButtonText } from '../../components/ButtonText'
 import pngegg from '../../assets/pngegg.png'
 import left from '../../assets/left.svg'
 import right from '../../assets/right.svg'
+// import { api } from '../../services/api'
 
 
 
 
 export function Home() {
   
-  const card = document.querySelectorAll("#cards cards")
-  let idx = 0
-  function carrosselUp(){
-    
-    idx++
-    if(idx > card.length - 1){
-      idx = 0
-    }
+  // const card = document.querySelectorAll("#cards cards")
+  // const plate = api.post('/plates', {plates})
+  // let plates = plate.id 
+  // function carrosselUp(){
+  //   plates ++
+  //   if(plates > card.length - 1){
+  //     plates = 0
+  //   }
    
-  }
-  function carrosselDown(){
-    idx--
-    if(idx < 0){
-      idx = card.length - 1
-    }
-  }
+  // }
+  // function carrosselDown(){
+  //   plates --
+  //   if(plates < 0){
+  //     plates = card.length - 1
+  //   }
+  // }
   
 return (
   <Container>
@@ -44,8 +45,8 @@ return (
       <h2>Refeições</h2>
     </div>
     <div className="view">
-      <ButtonText className="arrow-left" onClick={carrosselDown()} icon={left}/>
-      <ButtonText className="arrow-right" onClick={carrosselUp()} icon={right}/>
+      <ButtonText className="arrow-left"  icon={left}/>
+      <ButtonText className="arrow-right"  icon={right}/>
         <div className='cards' id='cards'>
         <Card/>
         <Card/>
@@ -63,8 +64,8 @@ return (
       <h2>Bebidas</h2>
     </div>
     <div className="view">
-      <ButtonText className="arrow-left" onClick={carrosselDown()} icon={left}/>
-      <ButtonText className="arrow-right" onClick={carrosselUp()} icon={right}/>
+      <ButtonText className="arrow-left" icon={left}/>
+      <ButtonText className="arrow-right" icon={right}/>
         <div className='cards' id='cards'>
         <Card/>
         <Card/>

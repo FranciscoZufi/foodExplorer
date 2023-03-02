@@ -17,7 +17,6 @@ export function Header() {
   const { signOut } = useAuth() 
   const navigate = useNavigate()
   function handleSignOut(){
-    console.log('cheguei aqui')
     signOut()
     navigate('/')
 }
