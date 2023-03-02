@@ -19,23 +19,38 @@ export function Header() {
   function handleSignOut(){
     signOut()
     navigate('/')
-}
+  }
+  function navigateToHome(){
+    navigate('/')
+  }
+  function navigateToMyFavorites(){
+    navigate('/myFavorites')
+  }
+  function navigateToOrderHistory(){
+    navigate('/orderHistory')
+  }
+  function navigateToMyRequests(){
+    navigate('/myRequests')
+  }
   return (
     <Container>
       <div className='desktop'>
+        <button id='button' onClick={navigateToHome}>
         <img src={explorer} alt="logo food explorer" />
-        <h1> food explorer</h1>
+        <h1> food explorer</h1></button>
         <Input type="search" placeholder=' Busque por pratos ou ingredientes'/>
-        <ButtonText title='Meus favoritos'/>
-        <ButtonText title='Histórico de pedidos'/>
-        <Button icon={pedido} title="Pedidos(0)"/>
+        <ButtonText title='Meus favoritos' onClick={navigateToMyFavorites}/>
+        <ButtonText title='Histórico de pedidos' onClick={navigateToOrderHistory}/>
+        <Button icon={pedido} title="Pedidos(0)" onClick={navigateToMyRequests}/>
         <ButtonText icon={logOut} onClick={handleSignOut}/> 
       </div>
       <div className='mobile'>
         <ButtonText icon={menu}/>
       <div className='soon'>
+      <button id='button' onClick={navigateToHome}>
         <img src={explorer} alt="logo food explorer" />
         <h1> food explorer</h1>
+        </button>
       </div>
       <div className='request'>
         <ButtonText icon={pedido}/>

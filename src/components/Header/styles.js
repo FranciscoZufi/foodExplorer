@@ -20,6 +20,14 @@ export const Container = styled.header`
     color: ${({ theme }) => theme.COLORS.LIGHT_300};
     background-color: ${({ theme }) => theme.COLORS.DARK_600};
   }
+  #button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    color: ${({ theme }) => theme.COLORS.LIGHT_300};
+    align-items: center;
+    justify-content: center;
+  }
   .mobile {
     display: flex;
     align-items: center;

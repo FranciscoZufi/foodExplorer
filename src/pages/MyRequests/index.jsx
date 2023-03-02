@@ -17,7 +17,7 @@ return (
   <Container>
    <Header />
    <div className='page'>
-    <div className='request hide'>
+    <div className='request'>
       <h1>Meu Pedido</h1>
       <div className='cardsRequest'>
         <CardRequest />
